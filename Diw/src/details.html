@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="script-details.js"></script>
+	<link rel="stylesheet" href="details.css">
+	<script src="https://kit.fontawesome.com/783ba0d75c.js" crossorigin="anonymous"></script>
+	<title>Detalhes ${nome}</title>
+</head>
+
+<body>
+	<main class="main">
+		<header class="header">
+			<div class="container">
+				<div class="content-header">
+					<img class="logo" src="../assets/images/Ativo 5.png" alt="Logo GameDash">
+					<img class="logo-invisivel" src="../assets/images/Ativo 9.png" alt="inv">
+					<div class="right-part">
+						<nav class="menu">
+							<ul>
+								<li><a href="#destaques">Destaques</a></li>
+								<li><a href="#lancamentos">Lançamentos</a></li>
+								<li><a href="#plataformas">Plataformas</a></li>
+								<li><a href="#publishers">Publishers</a></li>
+								<li><a href="#sobre">Sobre</a></li>
+							</ul>
+						</nav>
+						<input class="search-bar" type="search" placeholder="Pesquisar Games">
+						<div class="menu-hamburguer">
+							<input type="checkbox" id="menutoggle">
+							<label for="menutoggle" class="menu-icon">
+								<i class="fa fa-bars"></i>
+								<i class="fa fa-times"></i>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="details">
+			<div class="container">
+				<div class="title">
+			<h1>Detalhes</h1>
+		</div>
+			<div class="content">
+				<img src="/assets/images/ps4.jpg" alt="">
+				<div class="text">
+				<p><b>Nome:</b> ${name}</p>
+				<p><b>Sobre:</b> ${about}</p>
+				<p><b>Publisher:</b> ${developers}</p>
+				<p><b>Lançamento:</b> ${data}</p>
+				<p><b>Plataformas:</b> ${platforms}</p>
+				<p><b>Gênero:</b> ${genre}</p>
+				<p><b>Avaliação:</b> ${rating}</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

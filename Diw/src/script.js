@@ -37,7 +37,7 @@ function renderGames(games) {
 		generalTemplate += `<div class="video2">
 				<h2>${name}</h2>
 				<img class="img2" src="${image}" alt="Imagem">
-				<a href="detalhes.html"><p>Mais detalhes...</p></a>
+				<a href="details.html"><p>Mais detalhes...</p></a>
 		</div>`
 	}
 	containerGames.insertAdjacentHTML("beforeend", generalTemplate)
@@ -65,7 +65,7 @@ function renderDevelopers(developers) {
 						<p>${topgames[2].name}</p>
 				</li>
 		</ul>
-		<a class="more" href="detalhes.html?id=665"><p>Mais detalhes...</p></a>
+		<a class="more" href="details.html?id=665"><p>Mais detalhes...</p></a>
 </div>`
 	}
 	containerDevelopers.insertAdjacentHTML("beforeend", generalTemplate)
@@ -94,7 +94,7 @@ function renderPlatforms(platforms) {
 						<p>${gamename[2].name}</p>
 				</li>
 		</ul>
-		<a class="more" href="detalhes.html"><p>Mais detalhes...</p></a>
+		<a class="more" href="details.html"><p>Mais detalhes...</p></a>
 </div>`
 	}
 	containerPlatforms.insertAdjacentHTML("beforeend", generalTemplate)
