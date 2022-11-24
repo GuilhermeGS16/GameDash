@@ -1,5 +1,5 @@
 function fetchGames() {
-	return fetch('https://api.rawg.io/api/games?key=a3c8d2a979da4298a948094832a174f3&page_size=8')
+	return fetch('https://api.rawg.io/api/games/?key=a3c8d2a979da4298a948094832a174f3&page_size=8')
 		.then(function (response) {
 			return response.json();
 		})
@@ -36,8 +36,8 @@ function renderGames(games) {
 		const image = games[i].background_image
 		generalTemplate += `<div class="video2">
 				<h2>${name}</h2>
-				<img src="${image}" alt="Imagem">
-				<p>Mais detalhes...</p>
+				<img class="img2" src="${image}" alt="Imagem">
+				<a href="detalhes.html"><p>Mais detalhes...</p></a>
 		</div>`
 	}
 	containerGames.insertAdjacentHTML("beforeend", generalTemplate)
@@ -52,7 +52,7 @@ function renderDevelopers(developers) {
 		const topgames = developers[i].games
 		generalTemplate += `<div class="grid-box">
 		<h2>${name}</h2>
-		<img src="${image}" alt="Imagem">
+		<img class="img3" src="${image}" alt="Imagem">
 		<h3>Principais Jogos:</h3>
 		<ul class="menu-game">
 				<li>
@@ -65,7 +65,7 @@ function renderDevelopers(developers) {
 						<p>${topgames[2].name}</p>
 				</li>
 		</ul>
-		<p class="more">Mais detalhes...</p>
+		<a class="more" href="detalhes.html?id=665"><p>Mais detalhes...</p></a>
 </div>`
 	}
 	containerDevelopers.insertAdjacentHTML("beforeend", generalTemplate)
@@ -81,7 +81,7 @@ function renderPlatforms(platforms) {
 		
 		generalTemplate += `<div class="grid-box">
 		<h2>${name}</h2>
-		<img src="${image}" alt="Imagem">
+		<img class="img3" src="${image}" alt="Imagem">
 		<h3>Principais Jogos:</h3>
 		<ul class="menu-game">
 				<li>
@@ -94,7 +94,7 @@ function renderPlatforms(platforms) {
 						<p>${gamename[2].name}</p>
 				</li>
 		</ul>
-		<p class="more">Mais detalhes...</p>
+		<a class="more" href="detalhes.html"><p>Mais detalhes...</p></a>
 </div>`
 	}
 	containerPlatforms.insertAdjacentHTML("beforeend", generalTemplate)
