@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/783ba0d75c.js" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;800&family=Roboto:wght@400;900&display=swap"
+		rel="stylesheet">
 	<title>Gamedash</title>
 </head>
 
@@ -16,8 +21,8 @@
 		<header class="header">
 			<div class="container">
 				<div class="content-header">
-					<img class="logo" src="../assets/images/Ativo 5.png" alt="Logo GameDash">
-					<img class="logo-invisivel" src="../assets/images/Ativo 9.png" alt="inv">
+					<img onclick="home()" class="logo" src="../assets/images/Ativo 5.png" alt="Logo GameDash">
+					<img onclick="home()" class="logo-invisivel" src="../assets/images/Ativo 9.png" alt="inv">
 					<div class="right-part">
 						<nav class="menu">
 							<ul>
@@ -28,7 +33,7 @@
 								<li><a href="#sobre">Sobre</a></li>
 							</ul>
 						</nav>
-						<input class="search-bar" type="search" placeholder="Pesquisar Games">
+						<input id="search-bar" class="search-bar" type="search" placeholder="Pesquisar Games">
 						<div class="menu-hamburguer">
 							<input type="checkbox" id="menutoggle">
 							<label for="menutoggle" class="menu-icon">
@@ -44,37 +49,8 @@
 		</header>
 
 		<main class="conteudo">
-			<section class="destaques">
-				<div class="container">
-					<h1 id="destaques">Destaques</h1>
-					<div class="videotexto">
-						<div class="video">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/E3Huy2cdih0"
-								title="ELDEN RING - Trailer" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen></iframe>
-						</div>
-						<div class="text">
-							<h2>Elden Ring</h2>
-							<p><b>Sobre:</b> Elden Ring é apresentado através de uma perspectiva em terceira pessoa, com
-								os
-								jogadores percorrendo livremente pelo seu mundo aberto interativo. Os elementos de
-								jogabilidade
-								incluem combate, com vários tipos de armas e feitiços mágicos, passeios a cavalo e
-								crafting.
-								Elden Ring foi aclamado pela crítica, com elogios sendo direcionados à sua jogabilidade
-								e
-								projeto de mundo aberto. O jogo vendeu mais de 16,6 milhões de cópias até julho de 2022.
-							</p>
-							<p><b>Publisher:</b> Bandai Namco Entertainment <b>Lançamento:</b> Feb, 2022</p>
-							<p><b>Plataforma:</b> Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, Xbox Series
-								X/S
-							</p>
-							<p><b>Gênero:</b> RPG de ação, Jogo eletrônico de aventura, Mundo aberto</p>
-							<p><b>Avaliação: 97</b></p>
-						</div>
-					</div>
-				</div>
+			<section class="destaques" id="destaque">
+
 			</section>
 
 			<section class="lancamentos">
@@ -119,11 +95,11 @@
 				<div class="container">
 					<h1 id="plataformas">Plataformas</h1>
 					<div class="grid-container2" id="js-container-platforms"></div>
+					<button class="button">
+						<img src="../assets/images/mais.png" alt="mais">
+						<p>Carregar mais Plataformas</p>
+					</button>
 				</div>
-				<button class="button">
-					<img src="../assets/images/mais.png" alt="mais">
-					<p>Carregar mais Plataformas</p>
-				</button>
 				</div>
 			</section>
 

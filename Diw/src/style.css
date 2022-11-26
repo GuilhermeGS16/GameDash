@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: calibri, Helvetica, sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 /*Começo Header*/
@@ -107,13 +107,13 @@
 .video {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 */
     height: 0;
     margin-right: 20px;
+    border: solid 3px #6d00a0;
+    border-radius: 11px;
 }
 
-.video iframe {
-
+.video img {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,7 +129,6 @@
     text-align: start;
     padding: 10px;
     font-size: 25px;
-    margin-top: 10px;
     overflow: hidden;
     padding: 10px;
 }
@@ -195,7 +194,7 @@
 }
 
 .grid-container h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900px;
     margin-bottom: 5px;
 }
@@ -210,10 +209,15 @@
     height: 65%;
 }
 
+.img2,
+.img3 {
+    border: solid 3px #6d00a0;
+}
+
 .video2 p {
-    font-size: 0.8em;
-    font-weight: 500;
-    margin: 0;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-top: 2px;
 }
 
 .video2 a {
@@ -243,7 +247,7 @@
     border: 0;
     padding-right: 10px;
     float: right;
-    margin: 15px 0;
+    width: 250px;
 }
 
 .button p {
