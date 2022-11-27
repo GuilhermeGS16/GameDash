@@ -165,7 +165,6 @@ window.onload = function () {
 	fetchDestaque().then(renderDestaque)
 
 	document.getElementById("search-bar").onchange = function () { pegarValor() };
-
 	function pegarValor() {
 		var x = document.getElementById("search-bar");
 		x.value = x.value.toLowerCase()
