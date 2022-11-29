@@ -36,10 +36,13 @@ function renderGames(games) {
 		const image = games[i].background_image
 		const id = games[i].id
 		var rating = games[i].metacritic ? games[i].metacritic : "0"
+		const releasedDate = new Date(games[i].released + "T00:00")
+		const released = new Intl.DateTimeFormat('pt-BR').format(releasedDate)
 		generalTemplate += `<div class="video2">
 				<h2>${name}</h2>
 				<div id="rating" class="rating"><p>${rating}</p></div>  
 				<a href="details.html?id=${id}"><img class="img2" src="${image}" alt="Imagem"></a>
+				<p>Lançamento: ${released}</p>
 				<a href="details.html?id=${id}"><p>Mais detalhes...</p></a>
 		</div>`
 	}
@@ -57,7 +60,7 @@ function renderDevelopers(developers) {
 		const id = developers[i].id
 		generalTemplate += `<div class="grid-box">
 		<h2>${name}</h2>
-		<img class="img3" src="${image}" alt="Imagem">
+		<a href="details-developers.html?id=${id}"><img class="img3" src="${image}" alt="Imagem"></a>
 		<h3>Principais Jogos:</h3>
 		<ul class="menu-game">
 				<li>
@@ -86,7 +89,7 @@ function renderPlatforms(platforms) {
 		const id = platforms[i].id
 		generalTemplate += `<div class="grid-box">
 		<h2>${name}</h2>
-		<img class="img3" src="${image}" alt="Imagem">
+		<a href="details-platforms.html?id=${id}"><img class="img3" src="${image}" alt="Imagem"></a>
 		<h3>Principais Jogos:</h3>
 		<ul class="menu-game">
 				<li>
@@ -124,7 +127,7 @@ function renderDestaque(destaque) {
 	const rating = destaque.rating
 	const releasedDate = new Date(destaque.released + "T00:00")
 	const released = new Intl.DateTimeFormat('pt-BR').format(releasedDate)
-	const meta = destaque.metacritic
+	const meta = destaque.metacritic ? destaque.metacritic : "0"
 	let developers = ""
 	for (let i = 0; i < destaque.developers.length; i++) {
 		developers += destaque.developers[i].name + ", "
@@ -142,6 +145,7 @@ function renderDestaque(destaque) {
 	<h1 id="destaques">Destaques</h1>
 	<div class="videotexto">
 		<div class="video">
+		<div id="rating" class="rating"><p>${meta}</p></div>
 		<a href="details.html?id=28"><img class="img-destaque" src="${image}" alt="Imagem"></a>
 		</div>
 		<div class="text">

@@ -803,3 +803,21 @@ img {
 .content-footer img {
     cursor: pointer;
 }
+
+.img3 {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img3:hover {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.video #rating {
+    font-weight: 600;
+    font-size: 2em;
+    width: 80px;
+    height: 76px;
+
+}
