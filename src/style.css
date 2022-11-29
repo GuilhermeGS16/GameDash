@@ -19,6 +19,17 @@
     border: 2px solid #0f0f0f;
 }
 
+option {
+    font-weight: 500;
+    background-color: #303030;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.button {
+    cursor: pointer;
+}
+
 /*Começo Header*/
 .content-header {
     display: flex;
@@ -72,12 +83,33 @@
     box-shadow: none;
     outline: 0;
     border: none;
-    padding-left: 40px;
-    padding-right: 15px;
-    background-image: url(../assets/images/lupa.png);
+    padding-left: 15px;
+
+    /*background-image: url(../assets/images/lupa.png);
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: 10px;
+    background-position-x: 10px;*/
+}
+
+.search {
+    background-color: white;
+    width: 42px;
+    height: 34px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesq {
+    display: flex;
+    gap: 5px;
+}
+
+.search img {
+    width: 20px;
 }
 
 .menu-open {

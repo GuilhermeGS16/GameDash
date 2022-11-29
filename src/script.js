@@ -40,9 +40,9 @@ function renderGames(games) {
 		const released = new Intl.DateTimeFormat('pt-BR').format(releasedDate)
 		generalTemplate += `<div class="video2">
 				<h2>${name}</h2>
-				<div id="rating" class="rating"><p>${rating}</p></div>  
+				<div id="rating" class="rating"><p>${rating}</p></div> 
 				<a href="details.html?id=${id}"><img class="img2" src="${image}" alt="Imagem"></a>
-				<p>Lançamento: ${released}</p>
+				<p class="release">Lançamento: ${released}</p> 
 				<a href="details.html?id=${id}"><p>Mais detalhes...</p></a>
 		</div>`
 	}
@@ -195,6 +195,11 @@ window.onload = function () {
 		x.value = x.value.toLowerCase()
 		window.location.href = `search.html?search=${x.value}`;
 	}
+}
+
+function search() {
+	var x = document.getElementById("search-bar");
+	window.location.href = `search.html?search=${x.value}`;
 }
 
 function home() {
