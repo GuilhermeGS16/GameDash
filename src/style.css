@@ -4,7 +4,8 @@
     font-family: 'montserrat', sans-serif;
     scrollbar-width: thin;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -91,7 +92,7 @@ option {
 }
 
 .search {
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -102,6 +103,11 @@ option {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.search:hover {
+    background-color: rgb(194, 194, 194);
+    transition: 0.5s;
 }
 
 .pesq {
