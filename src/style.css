@@ -4,6 +4,9 @@
     font-family: 'montserrat', sans-serif;
     scrollbar-width: thin;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 *::-webkit-scrollbar {
     width: 12px;
@@ -83,29 +86,27 @@ option {
     box-shadow: none;
     outline: 0;
     border: none;
-    padding-left: 15px;
-
-    /*background-image: url(../assets/images/lupa.png);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 10px;*/
+    padding-left: 45px;
+    padding-right: 15px;
 }
 
 .search {
-    background-color: white;
-    width: 42px;
-    height: 34px;
+    background-color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
+    position: absolute;
+    margin-left: 4px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .pesq {
     display: flex;
-    gap: 5px;
+    align-items: center;
 }
 
 .search img {
