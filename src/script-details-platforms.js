@@ -15,6 +15,8 @@ function renderPlatform(platform) {
   const image = platform.image_background
   const about = platform.description
   const gamesCount = platform.games_count
+  const startYear = platform.year_start ? platform.year_start : "Ano não encontrado"
+  const endYear = platform.year_end ? platform.year_end : "Ainda em produção"
   generalTemplate += `<div class="details">
   <div class="container">
     <div class="title">
@@ -26,6 +28,8 @@ function renderPlatform(platform) {
     <p><b>Nome:</b> ${name}</p>
     <p><b>Sobre:</b> ${about}</p>
     <p><b>Quantidade de Jogos:</b> ${gamesCount}</p>
+    <p><b>Ano de Lançamento:</b> ${startYear}</p>
+    <p><b>Ano de Encerramento:</b> ${endYear}</p>
   </div>
   </div>
 </div>

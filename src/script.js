@@ -178,9 +178,9 @@ window.onload = function () {
 		fetchDevelopers(loadDev).then(renderDevelopers)
 	}
 
-	let loadPlat = 6
+	let loadPlat = 1
 	document.getElementById("loadPlat").onclick = function load() {
-		loadPlat += 3
+		loadPlat += 1
 		fetchPlatforms(loadPlat).then(renderPlatforms)
 	}
 
@@ -192,9 +192,18 @@ window.onload = function () {
 	document.getElementById("search-bar").onchange = function () { pegarValor() };
 	function pegarValor() {
 		var x = document.getElementById("search-bar");
-		x.value = x.value.toLowerCase()
 		window.location.href = `search.html?search=${x.value}`;
 	}
+
+	/*document.getElementById("select").onchange = function () { altContent() };
+	function altContent() {
+
+		let filter = document.getElementById("select").value;
+		fetchGames(loadGame, filter).then(renderGames)
+	}*/
+
+
+
 }
 
 function search() {
