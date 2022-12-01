@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.destaques{
+    display: flex;
+    overflow-x: scroll;
+}
+
 *::-webkit-scrollbar {
     width: 12px;
 }
